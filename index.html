@@ -417,14 +417,18 @@
     border-radius: 16px;
     padding: 28px 32px;
     border: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 18px;
+    row-gap: 14px;
   }
   .feature-icon {
-    font-size: 28px;
-    margin-bottom: 16px;
-    display: block;
+    font-size: 42px;
+    line-height: 1;
   }
-  .feature h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
-  .feature p { font-size: 15px; color: var(--text-mid); line-height: 1.6; }
+  .feature h3 { font-size: 20px; font-weight: 700; }
+  .feature p { grid-column: 1 / -1; font-size: 15px; color: var(--text-mid); line-height: 1.6; }
 
   /* WORKS WITH */
   .works-with { text-align: center; }
