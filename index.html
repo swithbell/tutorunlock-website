@@ -48,7 +48,11 @@
     --mint: #2FAA6A;
     --mint-soft: #E9F8F0;
     --mint-border: #C7ECD7;
-    --amber: #D99320;
+    --amber: #FACC2D;
+    --gold: #FACC2D;
+    --gold-deep: #E0A81E;
+    --teal: #1B9E9A;
+    --teal-deep: #157C79;
     --bloom-blue: #E7EEFE;
     --bloom-pink: #FBE9F0;
     --text: #1D2330;
@@ -77,9 +81,9 @@
   nav {
     position: sticky;
     top: 0;
-    background: rgba(255,255,255,0.95);
+    background: rgba(250,204,45,0.97);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--teal);
     z-index: 100;
     padding: 0 24px;
   }
@@ -114,19 +118,19 @@
   }
   .nav-links a {
     text-decoration: none;
-    color: var(--text-mid);
+    color: rgba(29,35,48,0.85);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .nav-cta {
-    background: var(--blue);
+    background: var(--teal);
     color: var(--white) !important;
     padding: 8px 18px;
     border-radius: 8px;
     font-weight: 700 !important;
     white-space: nowrap;
   }
-  .nav-cta:hover { background: var(--blue-deep) !important; }
+  .nav-cta:hover { background: var(--teal-deep) !important; }
   /* Hide nav text links on mobile — keep logo + download button only */
   @media (max-width: 700px) {
     .nav-link-hide { display: none; }
